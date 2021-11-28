@@ -1,0 +1,5 @@
+export enum EnumStage {
+  NEGOCIACAO = 'NEGOCIAÇÃO',
+  REJEITADO = 'REJEITADO',
+  CONCLUIDO = 'CONCLUÍDO',
+}
