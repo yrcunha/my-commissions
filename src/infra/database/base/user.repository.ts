@@ -1,5 +1,5 @@
-import { UserDto } from 'protocols/dtos/user.dto';
-import { IUserRepository } from 'protocols/interfaces/repositories/user-repo.interface';
+import { UserDto } from '@/protocol/dtos/user.dto';
+import { IUserRepository } from '@/protocol/interfaces/user.interface';
 
 export class UserRepository implements IUserRepository {
   public database: IUserRepository;

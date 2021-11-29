@@ -3,7 +3,7 @@ import { EnumItem } from '../enum/item.enum';
 
 export class ItemDto {
   id!: string;
-  image!: string;
+  image?: string;
   name!: string;
   type!: EnumItem;
   description!: string;

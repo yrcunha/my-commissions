@@ -1,9 +1,7 @@
-import { IUserRepository } from 'protocols/interfaces/repositories/user-repo.interface';
-
 export class ClientRepository {
-  public database: IUserRepository;
+  public database: any;
 
-  constructor(strategy: IUserRepository) {
+  constructor(strategy: any) {
     this.database = strategy;
   }
 }

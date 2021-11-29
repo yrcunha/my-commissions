@@ -1,4 +1,4 @@
-import { UserDto } from 'protocols/dtos/user.dto';
+import { UserDto } from '../dtos/user.dto';
 
 export interface IUserRepository {
   indexUser(

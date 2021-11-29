@@ -24,13 +24,13 @@ export class SaleEntity implements Omit<SaleDto, 'records'> {
 
   @Column({
     name: 'amount_total',
-    type: 'real',
+    type: 'money',
   })
   amount_total!: number;
 
   @Column({
     name: 'comission',
-    type: 'real',
+    type: 'money',
   })
   comission!: number;
 

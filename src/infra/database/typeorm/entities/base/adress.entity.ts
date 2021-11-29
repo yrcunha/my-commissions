@@ -36,7 +36,7 @@ export class AdressEntity implements AdressDto {
   @Column({
     name: 'number_house',
     type: 'varchar',
-    length: 10,
+    length: 8,
     default: 'Não informado',
   })
   number_house!: string;

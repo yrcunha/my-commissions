@@ -1,4 +1,5 @@
 import { EnumStatus } from '../enum/status.enum';
+import { AdressDto } from './adress.dto';
 import { UserDto } from './user.dto';
 
 export class ClientDto implements UserDto {
@@ -10,12 +11,10 @@ export class ClientDto implements UserDto {
   password!: string;
   phone!: string;
   email!: string;
-  zip_code!: string;
-  street!: string;
-  number_house!: string;
-  district!: string;
-  city!: string;
-  state!: string;
+  adress!: Pick<
+    AdressDto,
+    'zip_code' | 'street' | 'number_house' | 'district' | 'city' | 'state'
+  >;
   is_admin!: boolean;
   status!: EnumStatus;
   comments?: string;

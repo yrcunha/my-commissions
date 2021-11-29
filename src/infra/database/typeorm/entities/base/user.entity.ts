@@ -15,7 +15,7 @@ export class UserEntity {
   @Column({
     name: 'avatar',
     type: 'varchar',
-    length: 150,
+    length: 100,
     nullable: true,
   })
   avatar?: string;
@@ -36,10 +36,25 @@ export class UserEntity {
   cpf!: string;
 
   @Column({
+    name: 'phone',
+    type: 'varchar',
+    length: 12,
+    nullable: true,
+  })
+  phone?: string;
+
+  @Column({
+    name: 'email',
+    type: 'varchar',
+    length: 100,
+    unique: true,
+  })
+  email!: string;
+
+  @Column({
     name: 'password',
     type: 'varchar',
     length: 36,
-    nullable: true,
   })
   password!: string;
 

@@ -29,14 +29,14 @@ export class RegisterSaleEntity
 
   @Column({
     name: 'amount_item',
-    type: 'real',
+    type: 'money',
   })
   amount_item!: number;
 
   @Column({
     name: 'fix_value',
     type: 'varchar',
-    length: 100,
+    length: 16,
   })
   fix_value!: string;
 

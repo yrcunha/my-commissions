@@ -1,7 +1,7 @@
-import { UserDto } from 'protocols/dtos/user.dto';
-import { IUserRepository } from 'protocols/interfaces/repositories/user-repo.interface';
+import { UserDto } from '@/protocol/dtos/user.dto';
+import { IUserRepository } from '@/protocol/interfaces/user.interface';
 import { Connection } from 'typeorm';
-import { ConnectionStrategy } from './connection.strategy';
+import { ConnectionStrategy } from '../connection.strategy';
 
 export class UserPostgresStrategy
   extends ConnectionStrategy
@@ -25,9 +25,11 @@ export class UserPostgresStrategy
   ): Promise<void> {
     throw new Error('Method not implemented.');
   }
+
   updateUser(id: string): Promise<void> {
     throw new Error('Method not implemented.');
   }
+
   deleteUser(id: string): Promise<void> {
     throw new Error('Method not implemented.');
   }

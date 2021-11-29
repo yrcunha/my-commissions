@@ -17,9 +17,10 @@ export class ItemEntity implements ItemDto {
   @Column({
     name: 'image',
     type: 'varchar',
-    length: 150,
+    nullable: true,
+    length: 100,
   })
-  image!: string;
+  image?: string;
 
   @Column({
     name: 'name',
@@ -43,7 +44,7 @@ export class ItemEntity implements ItemDto {
 
   @Column({
     name: 'reference_price',
-    type: 'real',
+    type: 'money',
   })
   reference_price!: number;
 
